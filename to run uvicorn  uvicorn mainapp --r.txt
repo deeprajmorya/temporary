@@ -1,0 +1,76 @@
+to run uvicorn : uvicorn main:app --reload             
+
+                                    Knowelege Assisstance QA 
+things to address:
+edge cases:
+1) empty query means if no ques is asked and hit the api.
+2) ambiguish ques asked. non related to documents.
+3)repeated query , ans should be same
+4)typo in query
+5) long multi part query
+
+
+
+some sample questions for testing
+                                                   Healthy diet plan
+1){ "document_id": "your_doc_id", "question": "" }
+2){ "document_id": "your_doc_id", "question": "What is the distance to the moon?" }
+3){ "document_id": "your_doc_id", "question": "Wht is the protin conten in paneer?" }
+4){ "document_id": "your_doc_id", "question": "What is the best dinner plan?" }
+5){
+  "document_id": "your_doc_id",
+  "question": "What should I eat for breakfast and how much protein should I consume daily?"
+}
+6){ "document_id": "your_doc_id", "question": "What’s the capital of Spain?" }
+7){ "document_id": "your_doc_id", "question": "Can you show the calorie breakdown from the table?" }
+8){
+  "document_id": "4bfe081a737a7690",
+  "question": "what is my name"
+}
+9){
+  "document_id": "4bfe081a737a7690",
+  "question": "How is protein incorporated into the diet, especially for vegetarians?"
+}
+10){
+  "document_id": "4bfe081a737a7690",
+  "question": "What are some low-calorie snacks mentioned in the plan?"
+}
+                                        Birds
+1){
+  "document_id": "412af627a47bdc7b",
+  "question": "Why are birds considered good indicators of watershed health?"
+}
+2){
+  "document_id": "412af627a47bdc7b",
+  "question": "How do birds contribute economically to the U.S., according to the document?"
+}
+3){
+  "document_id": "412af627a47bdc7b",
+  "question": "List three natural agents of change that can impact watersheds and bird habitats."
+}
+4){
+  "document_id": "412af627a47bdc7b",
+  "question": "What are some human-made agents of change that negatively affect bird populations?"
+}
+5){
+  "document_id": "412af627a47bdc7b",
+  "question": "How can land managers use resources like the Partners in Flight (PIF) Bird Conservation Plans or the Breeding Bird Survey (BBS)?"
+}
+
+                                            global warming
+1){
+  "document_id": "5f0bbd46600e0b27",
+  "question": "What is the purpose of the Global Warming Potential (GWP) values in this document?"
+}
+2){
+  "document_id": "5f0bbd46600e0b27",
+  "question": "Why does the IPCC recommend using AR6 values over earlier reports (AR4, AR5)?"
+}
+3){
+  "document_id": "5f0bbd46600e0b27",
+  "question": "What are the three time horizons for GWP values mentioned, and which is included here?"
+}
+4){
+  "document_id": "5f0bbd46600e0b27",
+  "question": "Why are there two GWP values for methane (fossil vs. non-fossil)?"
+}
